@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Welcome to Vony JS</title>
+    <script src="assets/vony.js"></script>
+    <link rel="stylesheet" href="assets/paper.min.css">
+</head>
+
+<body>
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href=".">Vony JS</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <button onclick="goTo('Index')" class="btn-success-outline">Home</button>
+                    <button onclick="goTo('Profile')" class="btn-success-outline">Profile</button>
+                    <button onclick="goTo('Contact')" class="btn-success-outline">Contact</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br> <br> <br> <br>
+    <div class="paper container margin-bottom-large">
+        <center>
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h4 id="c1" class="card-title">
+
+                    </h4>
+
+                    <h5 id="c2" class="card-subtitle">
+
+                    </h5>
+
+                    <p id="c3" class="card-text">
+
+                    </p>
+
+                    <a class="card-link" href="#">Go</a>
+                    <a class="card-link" href="#">Go</a>
+                </div>
+            </div>
+        </center>
+    </div>
+    <script src="js/profile.js"></script>
+    <script src="js/route.js"></script>
+</body>
+
+</html>
