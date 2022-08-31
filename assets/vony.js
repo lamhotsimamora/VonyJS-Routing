@@ -98,7 +98,7 @@ class _vn_ {
         this.obj = document.getElementById(this.id);
         if (this.obj) {
             this.element = this.obj.tagName;
-            log('id element is ' + this.id + ' , component is ' + this.element)
+            log('ID of element is ' + this.id + ' , component is ' + this.element)
         }
     }
 
@@ -171,7 +171,7 @@ class _vn_ {
         }
         var _METHOD_ = this.method.toLowerCase();
         if (this.url==null){
-            log("URL Ajax is NULL, Ajax Stop");
+            log("URL of ajax is Null, Ajax Stop");
             return;
         }
         var _URL_ = this.url;
@@ -187,8 +187,8 @@ class _vn_ {
                 i++
             }
         }
-        log("Method Ajax is "+_METHOD_);
-        log("URL Ajax is "+_URL_);
+        log("Method of ajax is "+_METHOD_);
+        log("URL of ajax is "+_URL_);
     
         var x = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHttp');
         x.onreadystatechange = function () {
@@ -206,7 +206,7 @@ class _vn_ {
         try {
             x.send(_data_)
         } catch (e) {
-            log('Error Ajax - '+e);
+            log('Error ajax - '+e);
         }
         return this
     }
@@ -242,7 +242,8 @@ class _vn_ {
         finalUrlPath = finalUrlPath.toLowerCase();
 
         window.history.pushState({finalUrlPath},finalTitle,finalUrlPath);
-        callback=null ? null : callback();
+        log("URL changed -> "+finalUrlPath +' <- Title changed -> '+finalTitle);
+        callback==null ? null : callback();
         window.onpopstate = (event) => {
             log(`location: ${document.location}, state: ${JSON.stringify(event.state)}`)
         }
