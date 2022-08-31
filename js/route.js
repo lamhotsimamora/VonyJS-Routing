@@ -19,8 +19,10 @@ function goTo(value) {
                 break;
             case 'login':
                 final_template = template_login;
+                break;
             case 'register':
                 final_template = template_register;
+                break;
             default:
                 break;
         }

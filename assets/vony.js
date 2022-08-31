@@ -242,7 +242,7 @@ class _vn_ {
         finalUrlPath = finalUrlPath.toLowerCase();
 
         window.history.pushState({finalUrlPath},finalTitle,finalUrlPath);
-        log("URL changed -> "+finalUrlPath +' <- Title changed -> '+finalTitle);
+        log("URL changed -> "+finalUrlPath);
         callback==null ? null : callback();
         window.onpopstate = (event) => {
             log(`location: ${document.location}, state: ${JSON.stringify(event.state)}`)
