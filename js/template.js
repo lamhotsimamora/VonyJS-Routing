@@ -74,7 +74,7 @@ const template_register = `
     <label for="paperInputs1"></label>
     <input type="text" placeholder="Password" id="password">
     </div>
-    <button class="btn-success-outline">Register</button>
+    <button id="btn_register" class="btn-success-outline">Register</button>
     <button onclick="goTo('Login')" class="btn-primary-outline">Login</button>
     </div>
     </div>
@@ -93,7 +93,7 @@ const template_login = `
 <label for="paperInputs1"></label>
 <input type="text" placeholder="Password" id="password">
 </div>
-<button class="btn-success-outline">Login</button>
+<button id="btn_login" class="btn-success-outline">Login</button>
 <button onclick="goTo('Register')" class="btn-primary-outline">Register</button>
 </div>
 </div>

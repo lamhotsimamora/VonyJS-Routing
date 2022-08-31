@@ -1,6 +1,4 @@
-let content;
-
 
 ready(() => {
-    content = Vony({id:'content'}).set(template_profile);
+    Vony({id:'content'}).set(template_profile);
 });
